@@ -5,7 +5,9 @@ It will be worked on throughout the course of the semester, adding new things on
 
 I do not yet know the type of items it will manage, nor do I currently know the item fields I expect to use, as I have not yet gained enough experience in the subject to know such things. As such, when I do learn, I will change this later so as to be as accurate as possible.
 
-
+## Planned Data Model
+Expected fields for every collection item in the future: (May be modified in the future.)
+Name, Description, Image, Personal rating, Steam link, Genre.
 
 ## Project Deployment
 
