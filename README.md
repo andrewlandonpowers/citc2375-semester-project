@@ -9,8 +9,14 @@ I do not yet know the type of items it will manage, nor do I currently know the 
 Expected fields for every collection item in the future: (May be modified in the future.)
 Name, Description, Image, Personal rating, Steam link, Genre.
 
+## Project Progress
+Week 1: Established accounts with GitHub, Render, and ran html boilerplate to automatically deploy to Render via GitHub commit.
+Week 2: Semantic HTML and project pages.
+Week 3: Added CSS foundation with styling. Backgroud color, link stylization, item card article stylization.
+
 ## Project Deployment
 
 - GitHub Repository: https://github.com/andrewlandonpowers/citc2375-semester-project
 - Live Site: https://citc2375-semester-project-andrewpowers.onrender.com/
-- Project Topic: The topic we will be handling is creating a website to show off what we have learned in this class to our future employers... I think?
+- Project Topic: The topic we will be handling is creating a website to show off what we have learned in this class to our future employers.
+

@@ -1,0 +1,75 @@
+
+body {
+    font-family: Verdana, sans-serif;
+    color:black;
+    background-color: #f0f0ff;
+    line-height: 1.5;
+}
+
+.content-width{
+    max-width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+    padding:10px;
+}
+
+/* 
+I was told I need to make the content width have: maximum width, horizontal auto margins, and padding used for main
+So I assume I need a max width, horizontal (left and right) auto margins, and padding for the above and below, main and content-width.
+*/
+main{
+    max-width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+    padding:10px;
+}
+
+/*
+I want to make it so that way links get slightly larger when hovered over. This should meet the part 8 requirements.
+Googled the best way to do it, which is what the transform thing is about.
+*/
+
+a:hover, a:focus {
+    transform: scale(1.125);
+    margin: 6px;
+    color:darkcyan;
+}
+
+a {
+    transition: transform 0.15s ease;
+    display: inline-block;
+    margin: 6px;
+}
+
+.site-name{
+    font-size:30px;
+}
+
+* {
+    margin: 10px;
+}
+
+.item-card{
+    border: 2px solid black;
+    border-radius: 1%;
+    padding: 1%;
+    margin: 20px;
+}
+
+img{
+    max-width: 100%;
+    height:auto;
+    border-radius:1.5%;
+}
+
+h1{
+    font-size:30px;
+}
+
+h2{
+    font-size:24px;;
+}
+
+p{
+    font-size:16px;
+}

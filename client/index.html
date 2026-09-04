@@ -4,17 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Andrew Powers Favorite Games Project</title>
+  <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
-  <header>
-    <h1>Andrew Powers Favorite Games Project</h1>
+  <header class="content-width">
+    <p class="site-name">Andrew Powers Favorite Games Project</p>
+    <nav>
+      <a href="index.html">Main page</a>
+      <a href="about.html">About</a>
+      <hr>
+    </nav>
   </header>
-  <nav>
-    <a href="index.html">Main page</a>
-    <a href="about.html">About</a>
-  </nav>
   <main>
-    <p>For this project, I am currently planning to create a list of my favorite games on steam and other platforms, allowing others to more easily see my favorite games.</p>
+    <!-- I'm a little bit confused. We want the h1 in header, right? In the first assignment, the boilerplate you gave us had it as such.
+    And we want the h1 in main, according to the instructions, as a page specific header.
+    But we DON'T want more than one h1, right?
+    Alright, I'll change the sitewide header to be not an h1, and then add the page specific h1 in main. I hope this meets the requirements.-->
+    <h1>Favorite Games: </h1>
+    <p>This is a list of my favorite games on steam and other platforms, allowing others to more easily see my favorite games.</p>
     <p>The people who might use this web page are those who are looking for recommendations, looking to review my capabilities, or those I show it off to. It will use a collection of games/pictures, ideally?</p>
   </main>
 
@@ -22,22 +29,20 @@
     <h2>List of games:</h2>
     <p>This is a list of my favorite steam games of all time, in no particular order.</p>
   </section>
-<!--The articles slash sample items go below. I'm using the pictures I found off the internet for these games, are these images safe to use? I probably wouldn't get sued, right?-->
-<article class="arpg">
-  <!--Is adding the classes to the articles what was asked for for the category/type part of the assignment? I didn't quite understand a few things, so I assumed it was.
-  Either way, I added a <p> to show the genre as well.-->
+  <!--The articles slash sample items go below. I'm using the pictures I found off the internet for these games, specifically steam's page.-->
+  <article class="item-card">
     <h3>Terraria</h3>
     <p>Action RPG</p>
       <img src="images/terraria_header.jpg" alt="The Terraria banner as shown on steam.">
     <p>This game is one of the highest selling video games of all time, ranking at 7th place with 70 million sales. This is for good reason. The game is great,
         easily moddable, and is jam packed with countless items to try to find, craft, collect, and use in battle.
-        I've still never collected the terraprisma, to this day. (This counts as project specific information, right?.)
+        I've still never collected the terraprisma, to this day.
     </p>
     <p>My rating: 9.9/10</p>
     <a href="https://store.steampowered.com/app/105600/Terraria/">The Terraria Steam page.</a>
-</article>
-<hr>
-<article class="jrpg">
+  </article>
+  <hr>
+  <article class="item-card">
     <h3>Persona 5 Royal</h3>
     <p>Japanese Role Playing Game/JRPG</p>
       <img src="images/persona_5_r_header.jpg" alt="The Persona 5 Royal banner as shown on steam.">
@@ -47,9 +52,9 @@
     </p>
     <p>My rating: 9.7/10</p>
     <a href="https://store.steampowered.com/app/1687950/Persona_5_Royal/">The Persona 5 Royal Steam page.</a>
-</article>
-<hr>
-<article class="farmingSim">
+  </article>
+  <hr>
+  <article class="item-card">
     <h3>Fields of Mistria</h3>
     <p>Farming Simulator</p>
       <img src="images/fields_of_mistria_header.jpg" alt="The Fields of Mistria banner as shown on steam.">
@@ -60,10 +65,22 @@
     </p>
     <p>My rating: 9.1/10</p>
     <a href="https://store.steampowered.com/app/2142790/Fields_of_Mistria/">The Fields of Mistria Steam page.</a>
-</article>
+  </article>
+  <hr>
+  <article class="item-card"> <!--Added a new item.-->
+    <h3>Hollow Knight: Silksong</h3>
+    <p>Metroidvania</p>
+      <img src="images/silksong_header.jpg" alt="The Hollow Knight Silksong banner as shown on steam." width="460px" height="215px">
+    <p>A really fun 2d platformer/metroidvania, filled with a lot of fun bosses, fun characters,
+      interesting dialogue and expansions to the story of Hollow Knight. It's rather difficult, but it introduces
+      things in such a way that without realizing it, you get more skilled at playing the game as you go on, and without realizing it,
+      you'll find yourself having a unique playstyle that you're skilled at.
+    </p>
+    <p>My rating: 9.7/10</p>
+    <a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/">The Silksong Steam page.</a>
+  </article>
 
-
-  <footer>
+  <footer class="content-width">
     <p>The images featured are owned by the companies attributed through the steam links, none are owned by me.</p>
   </footer>
 </body>
