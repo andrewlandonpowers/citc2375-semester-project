@@ -1,8 +1,16 @@
+:root {
+  --color-background: #f0f0ff;
+  --color-surface: #ffffff;
+  --secondary-background: #f4f4ff;
+  --color-text: #000000;
+  --color-accent: darkcyan;
+}
+
 
 body {
     font-family: Verdana, sans-serif;
-    color:black;
-    background-color: #f0f0ff;
+    color:var(--color-text);
+    background-color: var(--color-background);
     line-height: 1.5;
 }
 
@@ -13,10 +21,13 @@ body {
     padding:10px;
 }
 
-/* 
-I was told I need to make the content width have: maximum width, horizontal auto margins, and padding used for main
-So I assume I need a max width, horizontal (left and right) auto margins, and padding for the above and below, main and content-width.
-*/
+nav{
+    display:flex;
+    border-bottom: 2px solid black;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
 main{
     max-width: 100%;
     margin-left:auto;
@@ -25,21 +36,30 @@ main{
 }
 
 /*
-I want to make it so that way links get slightly larger when hovered over. This should meet the part 8 requirements.
-Googled the best way to do it, which is what the transform thing is about.
+I added a 1% scale increase when hovering over item-cards. This meets objective 9, if my link hovering thing didn't.
+Also added a background color change that reverts after being removed.
 */
+
+.item-card:hover{
+    transform: scale(1.01);
+    background-color: var(--secondary-background);
+}
 
 a:hover, a:focus {
     transform: scale(1.125);
     margin: 6px;
-    color:darkcyan;
+    color: var(--color-accent);
 }
+
+
 
 a {
     transition: transform 0.15s ease;
-    display: inline-block;
+
     margin: 6px;
 }
+
+
 
 .site-name{
     font-size:30px;
@@ -49,7 +69,45 @@ a {
     margin: 10px;
 }
 
+
+.item-card > p{
+    content:"\A";
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    flex-direction:row;
+    max-width:600px;
+    min-width: 300px; */
+
+
+
+    /*
+    Goals: Make links in articles center.
+    */
+.item-card a{
+    display:flex;
+    justify-content: center;
+    transition: background-color 0.3s ease; 
+}
+
 .item-card{
+    max-width: 500px;
+      min-width: 150px;
+    max-height:700px;
+    min-height:550px;
+    transition: transform 0.15s ease;
     border: 2px solid black;
     border-radius: 1%;
     padding: 1%;
