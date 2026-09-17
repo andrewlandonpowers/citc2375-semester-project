@@ -80,22 +80,11 @@ section{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: px;
+    gap: 1px;
     margin: 0 auto;
     padding: 20px 10px;
 }
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-flow: row;
-    flex-direction:row;
-    max-width:600px;
-    min-width: 300px; */
 
-
-
-    /*
-    Goals: Make links in articles center.
-    */
 .item-card a{
     display:flex;
     justify-content: center;
@@ -130,4 +119,81 @@ h2{
 
 p{
     font-size:16px;
+}
+
+
+form{
+    display:flex;
+    margin: 0 auto;
+    width:100%;
+    align-items:center;
+    max-width:70%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+label, legend{
+    display:block;
+}
+
+#steam-link{
+    width:"500px";
+}
+
+input[type="submit"] {
+  display: block;
+  width: 20%;
+  min-width:200px;
+  height: 15%;
+  align-items:center;
+  background-color:#e0e0f0;
+  border-color:#cccccc;
+}
+
+input:focus, textarea:focus{
+    transform: scale(1.06125);
+}
+
+input, textarea{
+    transition: transform 0.15s ease;
+    display:inline-block;
+    margin-bottom:8px;
+}
+
+label{
+    border: 1px solid black;
+    display:block;
+    border-radius:3px;
+    padding-left:4px;
+    padding-right:4px;
+}
+
+
+table{
+    table-layout:fixed;
+    margin: 1px auto;
+    border: solid 4px #bbb;
+    border-collapse:collapse;
+    border-radius:3px;
+    width:50%;
+}
+
+th, td{
+    border: solid 2px #aaa;
+    border-collapse:collapse;
+}
+
+th{
+    background-color: #ccd;
+}
+
+thead th:nth-child(1) {
+  width: 25%;
+}
+thead th:nth-child(2) {
+  width: 20%;
+}
+thead th:nth-child(3) {
+  width: 55%;
 }

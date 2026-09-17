@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrew Powers Favorite Games About</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <header class="content-width">
+    <p class="site-name">Andrew Powers Favorite Games Project</p>
+    <nav>
+      <a href="index.html">Main page</a>
+      <a href="about.html">About</a>
+      <a href="add.html">Suggest a game</a>
+    </nav>
+  </header>
+  <main>
+    <h1>About this page:</h1>
+    <p>Hello. Here, you can submit games for me to add... Or it would, if it did anything yet. I know it looks a little 'bleh' but
+      I was more concerned with getting it done rather than making it look nice right away yet.
+    </p>
+
+
+    <form method="POST" action="#">
+      <!-- 
+      An email input:
+      A textarea for description
+      a name textarea for the name
+      a link to the steam page.
+      -->
+      <fieldset>
+        <legend>Submit a new game for me to try!</legend>
+          <label for="game-name"> Please enter the name of the game to suggest:
+           <input type="text" name="game-name" id="game-name" required/>
+          </label>
+          <label for="email"> Please enter your email:
+            <input type="email" name="email" id="email" required/>
+          </label>
+          <label for="steam-link"> Please paste a steam store link to your game:
+            <!--Googled a regex generator. Didn't realize how to use it, but now I do.-->
+            <input type="text" name="steam-link" id="steam-link" 
+            placeholder="https://store.steampowered.com/app/(appIdNumbers)/(gameTitle)/" size="55"
+            pattern="https://store\.steampowered\.com/app/[0-9]+/[A-Za-z0-9_]+/?"
+            title="Must be a Steam store link like https://store.steampowered.com/app/12345/Game_Title/"
+            required/>
+          </label>
+          <label>Please enter any comments you have about the game:<br>
+           <textarea id="thoughts" name="thoughts" rows="5" cols="50" placeholder="Write your thoughts on the game here!"></textarea>
+          </label>
+      </fieldset>
+
+
+      <input type="submit" value="Submit" />
+    </form>
+
+  </main>
+
+  <footer class="content-width">
+    <p>The images featured are owned by the companies attributed through the steam links, none are owned by me.</p>
+  </footer>
+</body>

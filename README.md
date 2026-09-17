@@ -14,6 +14,7 @@ Week 1: Established accounts with GitHub, Render, and ran html boilerplate to au
 Week 2: Semantic HTML and project pages.
 Week 3: Added CSS foundation with styling. Backgroud color, link stylization, item card article stylization.
 Week 4: Added Flexbox, root based color, and centered links in flexbox.
+Week 5: Added new page with a form and a table on former page.
 
 ## Project Deployment
 
