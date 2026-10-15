@@ -1,0 +1,6 @@
+Your name: Andrew Powers
+GitHub repository URL: https://github.com/andrewlandonpowers/citc2375-semester-project
+Render frontend URL:  https://citc2375-semester-project-andrewpowers.onrender.com/index.html
+The short identifier of your final Exam 1 commit: f0a7373
+Demonstration format: Video
+The direct URL to your hosted video: https://youtu.be/0vIiirZ64tA

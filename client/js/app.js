@@ -5,6 +5,7 @@ const persona5RoyalRating = 9.7;
 const mistriaRating = 9.1;
 const silksongRating = 9.7;
 const isaacRating = 9.7;
+const ex33Rating = 10;
 
 
 const calculateAverage = (...numbers) => {
@@ -12,7 +13,7 @@ const calculateAverage = (...numbers) => {
 };
 //googled. wanted a reusable average function.
 
-const averageScore = calculateAverage(terrariaRating, persona5RoyalRating, mistriaRating, silksongRating, isaacRating);
+const averageScore = calculateAverage(terrariaRating, persona5RoyalRating, mistriaRating, silksongRating, isaacRating, ex33Rating);
 
 const stringTemplateExample = `The current average score of all games is ${averageScore}`;
 
@@ -29,3 +30,7 @@ if (averageScore >= 9.5){
 else{
     console.log("These games average score is not above 9.5");
 }
+
+console.log(findObjectViaId(3));
+
+console.log(calculateArrayScoreAverage(items));

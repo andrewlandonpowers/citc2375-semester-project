@@ -16,6 +16,7 @@ Week 3: Added CSS foundation with styling. Backgroud color, link stylization, it
 Week 4: Added Flexbox, root based color, and centered links in flexbox.
 Week 5: Added new page with a form and a table on former page.
 Week 6: Javascript basics and fundamentals. Added an extreeemely simple average score calculation.
+Week 9: Created an array of objects representing the reviewed games, and 3 methods: findObjectViaId, calculateArrayScoreAverage, and returnGameOfType.
 
 ## Project Deployment
 
