@@ -20,8 +20,6 @@ const items = [
 // I just copied and pasted the descriptions from the index.html directly, since I'm assuming the end goal is to have the index.html
 // load these instead of having everything hard-written into the site.
 
-// Function that receives an id and returns a matching object.
-// I mean, I could literally just return the id-1 because they're sequential, but that's clearly not the intention.
 
 function findObjectViaId(idToFind){
     for(let game of items){
@@ -33,9 +31,7 @@ function findObjectViaId(idToFind){
 
 // This is the meaningful summary we were asked to do. It's intended to calculate the average score for all items in the array.
 function calculateArrayScoreAverage(theArray){
-    // I was getting NaN when this was being run so I included this if statement from the advice of an llm. It's not useful anymore,
-    // but if the user of this website tries to calculate the average score of a genre that doesn't exist in the future,
-    // this will prevent issues from ocurring.
+
     if (theArray.length === 0) {
         return 0;
     }
@@ -46,8 +42,7 @@ function calculateArrayScoreAverage(theArray){
     return sum / theArray.length;
 }
 
-// I searched up a better solution for this than what I originally had. This is that solution.
-// I believe it returns a filtered array that checks each item in the array as a name 'game' and then
+
 function returnGameOfType(gameType){
     return items.filter(game => game.type === gameType);
 }

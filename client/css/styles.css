@@ -4,6 +4,13 @@
   --secondary-background: #f4f4ff;
   --color-text: #000000;
   --color-accent: darkcyan;
+
+  /* Applying these for reusable spacing patterns.*/
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
 }
 
 
@@ -35,11 +42,6 @@ main{
     padding:10px;
 }
 
-/*
-I added a 1% scale increase when hovering over item-cards. This meets objective 9, if my link hovering thing didn't.
-Also added a background color change that reverts after being removed.
-*/
-
 .item-card:hover{
     transform: scale(1.01);
     background-color: var(--secondary-background);
@@ -64,25 +66,35 @@ a {
 .site-name{
     font-size:30px;
 }
-
-* {
-    margin: 10px;
-}
+/*Removed the blanket margin. I think it looks better.*/
 
 
 .item-card > p{
     content:"\A";
 }
 
+/*
+I did also copy and paste the grid template columns from a google search on 'convert flex to grid' and change it slightly
+*/
 section{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 3px), 500px));
+    justify-content: center;   
+    align-items: start;        
+    gap: 20px;                 
     padding: 20px 10px;
+}
+
+/*Had issues with the images in item card breaking when switching to grid, this fixes it?*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.item-card img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;   
 }
 
 .item-card a{
@@ -94,7 +106,7 @@ section{
 .item-card{
     max-width: 500px;
       min-width: 150px;
-    max-height:700px;
+    max-height:1400px;
     min-height:550px;
     transition: transform 0.15s ease;
     border: 2px solid black;
@@ -197,3 +209,40 @@ thead th:nth-child(2) {
 thead th:nth-child(3) {
   width: 55%;
 }
+
+
+
+/*
+Reusable classes for the 8th checkpoint: Padding and margin for sides with the
+spaces declared in the root.
+
+These should count as the reusabe utility like classes, unless I've misunderstood the objective.
+
+I had a hard time deciding what reusable utility like classes I would use so I made a whole bunch of them,
+even if I don't know where I would use them yet.
+*/
+.pad-1  { padding: var(--space-1); }
+.pad-2  { padding: var(--space-2); }
+.pad-3  { padding: var(--space-3); }
+.pad-4  { padding: var(--space-4); }
+.pad-5  { padding: var(--space-5); }
+.mt-1 { margin-top: var(--space-1); }
+.mt-2 { margin-top: var(--space-2); }
+.mt-3 { margin-top: var(--space-3); }
+.mt-4 { margin-top: var(--space-4); }
+.mt-5 { margin-top: var(--space-5); }
+.mb-1 { margin-bottom: var(--space-1); }
+.mb-2 { margin-bottom: var(--space-2); }
+.mb-3 { margin-bottom: var(--space-3); }
+.mb-4 { margin-bottom: var(--space-4); }
+.mb-5 { margin-bottom: var(--space-5); }
+.ml-1 { margin-left: var(--space-1); }
+.ml-2 { margin-left: var(--space-2); }
+.ml-3 { margin-left: var(--space-3); }
+.ml-4 { margin-left: var(--space-4); }
+.ml-5 { margin-left: var(--space-5); }
+.mr-1 { margin-right: var(--space-1); }
+.mr-2 { margin-right: var(--space-2); }
+.mr-3 { margin-right: var(--space-3); }
+.mr-4 { margin-right: var(--space-4); }
+.mr-5 { margin-right: var(--space-5); }

@@ -1,4 +1,4 @@
-const sampleItemCount = 5;
+const sampleItemCount = 6;
 const projectTitle = "Andrew Powers Favorite Games Project";
 const terrariaRating = 9.9;
 const persona5RoyalRating = 9.7;
@@ -11,7 +11,7 @@ const ex33Rating = 10;
 const calculateAverage = (...numbers) => {
   return numbers.reduce((sum, val) => sum + val, 0) / numbers.length;
 };
-//googled. wanted a reusable average function.
+
 
 const averageScore = calculateAverage(terrariaRating, persona5RoyalRating, mistriaRating, silksongRating, isaacRating, ex33Rating);
 

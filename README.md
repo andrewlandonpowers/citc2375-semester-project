@@ -17,6 +17,7 @@ Week 4: Added Flexbox, root based color, and centered links in flexbox.
 Week 5: Added new page with a form and a table on former page.
 Week 6: Javascript basics and fundamentals. Added an extreeemely simple average score calculation.
 Week 9: Created an array of objects representing the reviewed games, and 3 methods: findObjectViaId, calculateArrayScoreAverage, and returnGameOfType.
+Week 10: Switched section css to grid rather than flexbox. I chose section because it was the container holding all of the project items. Replacing the section gave me a good chance to fix some of the things I disliked about this page.
 
 ## Project Deployment
 
