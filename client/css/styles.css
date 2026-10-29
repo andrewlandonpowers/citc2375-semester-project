@@ -76,9 +76,9 @@ a {
 /*
 I did also copy and paste the grid template columns from a google search on 'convert flex to grid' and change it slightly
 */
-section{
+.item-main-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 3px), 500px));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 500px));
     justify-content: center;   
     align-items: start;        
     gap: 20px;                 
@@ -209,6 +209,14 @@ thead th:nth-child(2) {
 thead th:nth-child(3) {
   width: 55%;
 }
+
+#genre-sort{
+    display: flex;
+    justify-content: center;  
+    align-items: center;       
+    gap: 10px;    
+}
+
 
 
 
