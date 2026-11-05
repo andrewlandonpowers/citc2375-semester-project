@@ -1,0 +1,248 @@
+:root {
+  --color-background: #f0f0ff;
+  --color-surface: #ffffff;
+  --secondary-background: #f4f4ff;
+  --color-text: #000000;
+  --color-accent: darkcyan;
+
+  /* Applying these for reusable spacing patterns.*/
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+}
+
+
+body {
+    font-family: Verdana, sans-serif;
+    color:var(--color-text);
+    background-color: var(--color-background);
+    line-height: 1.5;
+    margin:0;
+}
+
+.content-width{
+    max-width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+    padding:10px;
+}
+
+nav{
+    display:flex;
+    border-bottom: 2px solid black;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+main{
+    max-width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+    padding:10px;
+}
+
+.item-card:hover{
+    transform: scale(1.01);
+    background-color: var(--secondary-background);
+}
+
+a:hover, a:focus {
+    transform: scale(1.125);
+    margin: 6px;
+    color: var(--color-accent);
+}
+
+
+
+a {
+    transition: transform 0.15s ease;
+
+    margin: 6px;
+}
+
+
+
+.site-name{
+    font-size:30px;
+}
+
+
+.item-card > p{
+    content:"\A";
+}
+
+/*
+I did also copy and paste the grid template columns from a google search on 'convert flex to grid' and change it slightly
+*/
+.item-main-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 450px));
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    padding: 20px 10px;
+}
+
+/*Had issues with the images in item card breaking when switching to grid, this fixes it?*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.item-card img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;   
+}
+
+.item-card a{
+    display:flex;
+    justify-content: center;
+    transition: background-color 0.3s ease; 
+}
+
+.item-card{
+    max-width: 500px;
+    min-width: 150px;
+    max-height: 1400px;
+    min-height: 550px;
+    transition: transform 0.15s ease;
+    border: 2px solid black;
+    border-radius: 1%;
+    padding: 1%;
+}
+
+img{
+    max-width: 100%;
+    height:auto;
+    border-radius:1.5%;
+}
+
+h1{
+    font-size:30px;
+}
+
+h2{
+    font-size:24px;;
+}
+
+p{
+    font-size:16px;
+}
+
+
+form{
+    display:flex;
+    margin: 0 auto;
+    width:100%;
+    align-items:center;
+    max-width:70%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+label, legend{
+    display:block;
+}
+
+#steam-link{
+    width:"500px";
+}
+
+input[type="submit"] {
+  display: block;
+  width: 20%;
+  min-width:200px;
+  height: 15%;
+  align-items:center;
+  background-color:#e0e0f0;
+  border-color:#cccccc;
+}
+
+input:focus, textarea:focus{
+    transform: scale(1.06125);
+}
+
+input, textarea{
+    transition: transform 0.15s ease;
+    display:inline-block;
+    margin-bottom:8px;
+}
+
+label{
+    border: 1px solid black;
+    display:block;
+    border-radius:3px;
+    padding-left:4px;
+    padding-right:4px;
+}
+
+
+table{
+    table-layout:fixed;
+    margin: 1px auto;
+    border: solid 4px #bbb;
+    border-collapse:collapse;
+    border-radius:3px;
+    width:50%;
+}
+
+th, td{
+    border: solid 2px #aaa;
+    border-collapse:collapse;
+}
+
+th{
+    background-color: #ccd;
+}
+
+thead th:nth-child(1) {
+  width: 25%;
+}
+thead th:nth-child(2) {
+  width: 20%;
+}
+thead th:nth-child(3) {
+  width: 55%;
+}
+
+.genre-sort{
+    display: grid;
+    place-items:center;     
+    gap: 10px;    
+}
+
+
+
+
+/*
+I didn't know what styles were needed for react to run, so I just overwrote them all.
+*/
+.pad-1  { padding: var(--space-1); }
+.pad-2  { padding: var(--space-2); }
+.pad-3  { padding: var(--space-3); }
+.pad-4  { padding: var(--space-4); }
+.pad-5  { padding: var(--space-5); }
+.mt-1 { margin-top: var(--space-1); }
+.mt-2 { margin-top: var(--space-2); }
+.mt-3 { margin-top: var(--space-3); }
+.mt-4 { margin-top: var(--space-4); }
+.mt-5 { margin-top: var(--space-5); }
+.mb-1 { margin-bottom: var(--space-1); }
+.mb-2 { margin-bottom: var(--space-2); }
+.mb-3 { margin-bottom: var(--space-3); }
+.mb-4 { margin-bottom: var(--space-4); }
+.mb-5 { margin-bottom: var(--space-5); }
+.ml-1 { margin-left: var(--space-1); }
+.ml-2 { margin-left: var(--space-2); }
+.ml-3 { margin-left: var(--space-3); }
+.ml-4 { margin-left: var(--space-4); }
+.ml-5 { margin-left: var(--space-5); }
+.mr-1 { margin-right: var(--space-1); }
+.mr-2 { margin-right: var(--space-2); }
+.mr-3 { margin-right: var(--space-3); }
+.mr-4 { margin-right: var(--space-4); }
+.mr-5 { margin-right: var(--space-5); }

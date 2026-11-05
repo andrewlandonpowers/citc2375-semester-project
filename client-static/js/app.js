@@ -35,16 +35,6 @@ console.log(findObjectViaId(3));
 
 console.log(calculateArrayScoreAverage(items));
 
-// Here's my notes:
-// Step 1: Remove the hard coded items, leave a single empty item. 
-// 2: Add a filter above index.html, specifically a selectbox that populates with the types of genres within the array of objects in data.js
-// 3: Select the item-list-container and filter control with dom apis
-// 4: Create renderItems(itemsToRender), which clears the current rendered items and then re-displays them
-// 5 call renderitems when page first loads.
-// 6 Add a change event listener to the selectbox filter control that calls returnGameOfType
-// 7 Add a favorite or bookmark control to each rendered item. Add an event listener so it changes the item's favorite state in the interface.
-// 8 Store the list of favorite item ids in localstorage and restore the favorite indicators
-// 9 add one meaningful preference to localStorage for persistent preferences. (I should do last selected genre will be automatically loaded upon page load.)
 
 
 // 1: Done. 2 isn't done. 3 is done. 4 is done.
@@ -116,9 +106,6 @@ function renderItems(itemsToRender){
         steamLink.textContent += "The steam page for: "
         steamLink.textContent += item.name;
 
-
-        // VV needed assistance for this. VV
-
         const favButton = document.createElement('button');
         const isFav = getFavorites().includes(item.id);
         favButton.textContent = isFav ? "★ Favorited!" : "☆ Favorite?";
@@ -128,9 +115,9 @@ function renderItems(itemsToRender){
         const favs = getFavorites();
         let updated;
         if (favs.includes(item.id)) {
-            updated = favs.filter(id => id !== item.id);   // remove
+            updated = favs.filter(id => id !== item.id);
         } else {
-            updated = [...favs, item.id];                  // add
+            updated = [...favs, item.id];
         }
         saveFavorites(updated);
 
