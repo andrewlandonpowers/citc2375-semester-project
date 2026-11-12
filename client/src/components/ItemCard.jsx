@@ -14,7 +14,11 @@ export default function ItemCard({
                 {isFavorite ? "★  Favorited!" : "☆  Favorite?"}
             </button>
             <p>{item.type}</p>
-            <img src={item.img}/>
+            <img
+                src={item.img}
+                alt={item.name}
+                onError={(e) => { e.target.src = "/images/Unknown.jpg"; }}
+            />
             <p>{item.description}</p>
             <p>My rating: {item.rating}/10</p>
             <a href={item.link}>The steam page for: {item.name}</a>

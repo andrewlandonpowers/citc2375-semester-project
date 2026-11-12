@@ -20,6 +20,7 @@ Week 9: Created an array of objects representing the reviewed games, and 3 metho
 Week 10: Switched section css to grid rather than flexbox. I chose section because it was the container holding all of the project items. Replacing the section gave me a good chance to fix some of the things I disliked about this page.
 Week 11: Used DOM rendering, added filtering, favorites, and made the page load the last selected genre by default for persistence (part 9 of assignment). Considered adding the ability to sort by favorited items as well, decided against it due to realizing it would be a larger undertaking than I thought.
 Week 12: Switched index.html to react, and slightly decreased margins.
+Week 13: React State, Hooks, Forms, and Routing
 
 ## Project Deployment
 
