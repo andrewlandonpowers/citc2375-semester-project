@@ -14,6 +14,7 @@ const [thoughts, setThoughts] = useState('');
 
 // no idea if this will work at this pace.
 // Asked ai to create something to retrieve the header for me... and it somehow worked?
+// Nevermind, I tested it on render and it didn't actually want to work for me. I have no idea why it worked on my device but not on render.
 function getSteamHeader(link) {
     const match = link.match(/store\.steampowered\.com\/app\/(\d+)/);
     return match
