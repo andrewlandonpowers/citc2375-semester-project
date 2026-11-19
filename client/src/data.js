@@ -26,7 +26,6 @@ export const items = [
 
 
 
-
 // These functions are no longer used at all because the template you shared had alternatives, though I did copy paste some of the code
 // from these into the template you shared to make it auto populate the genre select.
 

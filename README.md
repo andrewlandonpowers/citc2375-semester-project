@@ -21,6 +21,7 @@ Week 10: Switched section css to grid rather than flexbox. I chose section becau
 Week 11: Used DOM rendering, added filtering, favorites, and made the page load the last selected genre by default for persistence (part 9 of assignment). Considered adding the ability to sort by favorited items as well, decided against it due to realizing it would be a larger undertaking than I thought.
 Week 12: Switched index.html to react, and slightly decreased margins.
 Week 13: React State, Hooks, Forms, and Routing. Tried to make the games added through steam links obtain the header.jpg from steam, worked on dev, failed on production.
+Week 14: Typescript introduction, submitted item persistence.
 
 ## Project Deployment
 
